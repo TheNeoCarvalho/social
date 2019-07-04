@@ -1,0 +1,49 @@
+[debug] [2019-07-04T01:14:23.651Z] ----------------------------------------------------------------------
+[debug] [2019-07-04T01:14:23.653Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2019-07-04T01:14:23.653Z] CLI Version:   7.0.2
+[debug] [2019-07-04T01:14:23.653Z] Platform:      linux
+[debug] [2019-07-04T01:14:23.653Z] Node Version:  v11.15.0
+[debug] [2019-07-04T01:14:23.659Z] Time:          Wed Jul 03 2019 22:14:23 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-07-04T01:14:23.659Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-04T01:14:23.667Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-04T01:14:23.667Z] > authorizing via signed-in user
+[debug] [2019-07-04T01:14:23.667Z] [iam] checking project mysocialapp84 for permissions ["firebase.projects.get"]
+[debug] [2019-07-04T01:14:23.669Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mysocialapp84:testIamPermissions  
+
+[debug] [2019-07-04T01:14:25.198Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-04T01:14:25.206Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mysocialapp84  
+ 
+[debug] [2019-07-04T01:14:26.413Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/manolo/Documents/Dev/social'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "11"
+[debug] [2019-07-04T01:14:26.452Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/971104890625:getServerAppConfig  
+ 
+[debug] [2019-07-04T01:14:27.045Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/manolo/Documents/Dev/social/functions" for Cloud Functions...
+[debug] [2019-07-04T01:14:27.396Z] Functions runtime initialized.
+[debug] [2019-07-04T01:14:27.397Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-07-04T01:14:27.492Z] firebase-admin has been stubbed.
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/mysocialapp84/us-central1/helloWorld
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/mysocialapp84/us-central1/getScreams
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/mysocialapp84/us-central1/createScreams
+[debug] [2019-07-04T01:14:40.554Z] Accepted request GET /mysocialapp84/us-central1/createScreams --> createScreams
+[debug] [2019-07-04T01:14:40.791Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "createScreams"
+[debug] [2019-07-04T01:14:40.792Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-07-04T01:14:40.863Z] firebase-admin has been stubbed.
+[debug] [2019-07-04T01:14:40.872Z] Trigger "createScreams" has been found, beginning invocation!
+[debug] [2019-07-04T01:14:40.872Z] 
+[debug] [2019-07-04T01:14:40.872Z] Running createScreams in mode HTTPS
+[debug] [2019-07-04T01:14:40.878Z] {"socketPath":"/tmp/firebase_emulator_invocation_15631.sock"}
+[debug] [2019-07-04T01:14:40.880Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15631.sock"}
+[debug] [2019-07-04T01:14:40.902Z] Ephemeral server used!
+[debug] [2019-07-04T01:14:40.903Z] Body{
+	"body": "Novo usuario",
+	"userHandle": "Nova postagem"
+}
+[debug] [2019-07-04T01:14:40.908Z] Ephemeral server survived.
+[info] i  functions: Finished "createScreams" in ~1s
